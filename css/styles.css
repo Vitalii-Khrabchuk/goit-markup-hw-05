@@ -524,7 +524,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-max-height: 584px;
+height: 100%;
 background-color: rgba(46, 47, 66, 0.4);
 opacity: 0;
 visibility: hidden;
@@ -638,7 +638,7 @@ margin-bottom: 8px;
 }
 
 .form-modal{
-    margin-left: 20px;
+  
 }
 
 .input-title{
@@ -648,6 +648,8 @@ margin-bottom: 8px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
+
 }
 
 .texarea-txt{
@@ -655,6 +657,12 @@ margin-bottom: 8px;
     border-radius: 4px;
     width: 360px;
     height: 120px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .reviev-wrapper{
@@ -688,5 +696,25 @@ margin-bottom: 8px;
      margin-bottom: 24px;
 }
 
+.texarea-txt::placeholder {
+    position: absolute;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+        top: 8px;
+        left: 16px;
+}
 
+.form-custom-checkbox{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+}
 
+#field-privacy:checked + .input-title > .form-custom-checkbox {
+    background-color: #4D5AE5;
+}
