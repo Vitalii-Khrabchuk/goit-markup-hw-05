@@ -605,7 +605,7 @@ margin-left: auto;
 
         /*modal-window*/
 
- .backdrop{
+.backdrop{
 position: fixed;
 top: 0;
 left: 0;
@@ -618,7 +618,7 @@ pointer-events: none;
 transition:
            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-open{
@@ -643,16 +643,15 @@ transform: translate(-50%, -50%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 padding: 72px 24px 24px 24px;
 margin-bottom: 8px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
 
  .backdrop:not(.is-open) .modal {
 transform: translate(-50%, -100%);
  }
 
-/*stroke-width: 1px;
-stroke: rgba(0, 0, 0, 0.1);*/
+
 
  .form-close{
     position: absolute;
@@ -661,7 +660,8 @@ stroke: rgba(0, 0, 0, 0.1);*/
     border-radius:50%;
     width: 24px;
     height: 24px;   
-    
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -674,7 +674,7 @@ stroke: rgba(0, 0, 0, 0.1);*/
  }
 
  .close-icon{
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .form-close:hover,
