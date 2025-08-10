@@ -545,6 +545,13 @@ margin-right: auto;
     color: #fff;
  }
 
+ .batton-footer-send:hover,
+ .batton-footer-send:focus{
+    background-color: #31D0AA;
+    cursor: pointer;
+                
+ }
+
  
  .input-emeil-footer{
     flex: 1;
@@ -554,8 +561,15 @@ margin-right: auto;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
-
  }
+
+    .input-emeil-footer:hover,
+    .input-emeil-footer:focus{
+        border-color: #31D0AA;
+    
+    }
+
+
 
  .input-emeil-footer::placeholder{
     font-family: "Roboto", sans-serif;
