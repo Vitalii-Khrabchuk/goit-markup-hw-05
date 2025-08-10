@@ -423,10 +423,42 @@
             </li>
           </ul>
         </div>
-      </div>        
+      </div>   
+
+
+      <div class="email-form">
+         <p class="email-form-txt">Subscribe</p>
+         <form class="form-footer-email">
+          <label class="input-label-foooter-email" for="footer-email">
+            <input class="input-emeil-footer"
+                   type="email"
+                   id="footer-email"
+                   name="email"
+                   placeholder="E-mail"
+                   required
+                   >
+          </label>
+          <button class="batton-footer-send" type="submit">
+            Subscribe 
+            <svg class="footer-button-icon" width="24px" height="24px">
+               <use href="./images/icons.svg#icon-send-emeil"></use>
+            </svg>                       
+          </button>
+         </form>
+      </div>     
     </footer>
 
-  <div class="backdrop is-open">
+
+
+<!--
+
+-->
+
+
+
+
+                                  <!--modal-window-->
+  <div class="backdrop">
     <div class="modal">
        <button class="form-close" type="button">
          <svg class="close-icon" width="8px" height="8px">
@@ -474,26 +506,25 @@
   <textarea class="texarea-txt" name="Comment" id="texarea-input" placeholder="Text input"></textarea>
 </div>
 
-       <div class="reviev-wrapper">
-          <input type="checkbox" id="field-privacy" >
-          <label class="input-title" for="field-privacy"></label>
-          <span class="form-custom-checkbox"></span> I accept the terms and conditions of the 
-          <a class="highlight" href="#">Privacy Policy</a></label>
-      </div>
-      <button class="button-model" type="submit">Send</button>
-      
-
-
 
       <div class="reviev-wrapper">
-        <label class="input-title">
-          <input type="checkbox">
-          I accept the terms and conditions of the
-          <a class="highlight" href="#">Privacy Policy</a>
+          <input 
+                class="input-checkbox inputlly-hidden"
+                name="checkbox"
+                type="checkbox"
+                id="field-privacy"
+                value="true" />
+          <label class="input-title" for="field-privacy">
+          <span class="form-custom-checkbox">
+               <svg class="icon-checkbox" width="10px" height="8px">
+                 <use href="./images/icons.svg#icon-galochka-icon"></use>
+               </svg>
+           </span>
+            I accept the terms and conditions of the
+            <a class="highlight" href="#">Privacy Policy</a>        
         </label>
-      </div>
-
-
+       </div>
+      <button class="button-model" type="submit">Send</button>
      </form>
     </div>
   </div>
@@ -501,3 +532,11 @@
 
 </html>
 
+
+
+
+
+
+<!--
+
+-->
