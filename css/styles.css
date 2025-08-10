@@ -222,7 +222,7 @@ color: #fff;
 padding: 120px 0;
 }
 
-.inputlly-hidden{
+.visually-hidden {
 position: absolute;
 width: 1px;
 height: 1px;
