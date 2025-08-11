@@ -464,7 +464,6 @@ text-align: left;
 
 /* footer */
 .page-footer {
-    display: flex;
 background-color: #2e2f42;
 padding: 100px 0;
 }
@@ -536,13 +535,11 @@ margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
     height: 40px;
     background: #4d5ae5;
-    margin-left: 24px;
     color: #fff;
     min-width: 165px;
     font-weight: 500;
@@ -550,6 +547,7 @@ margin-left: auto;
     letter-spacing: 0.04em;
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 
@@ -576,7 +574,6 @@ margin-left: auto;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    padding-left: 16px;
     color: #ffffff;
  }
 
@@ -595,7 +592,6 @@ margin-left: auto;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
-    padding-left: 16px;
     color: #ffffff;
   }
 
@@ -702,14 +698,11 @@ transform: translate(-50%, -100%);
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 72px;
     margin-bottom: 16px;
     }
 
 .input-wrapper {
     position: relative;
-    padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .input-icon {
@@ -733,7 +726,6 @@ width: 100%;
 height: 40px;
 padding-left: 38px;
 box-sizing: border-box;
-margin-bottom: 8px;
 background-color: transparent;
 outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -766,6 +758,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
 }
 
+.input-title-chekbox{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    line-height: 1.17;
+}
+
 .texarea-txt{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -795,13 +798,11 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    margin-left: 16px;
-    margin-top: 8px;
+
     }
 
 
 .reviev-wrapper{
-    margin-top: 16px;
     margin-bottom: 24px;
 
 }
@@ -839,6 +840,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 16px;
     height: 16px;
     fill: transparent;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -866,7 +868,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    margin-bottom: 24px;
     border: none;
     align-items: center;
     cursor: pointer;
