@@ -587,14 +587,8 @@ margin-left: auto;
 
 
  .input-emeil-footer::placeholder{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
     color: #fff;
     color: #ffffff;
-    padding-left: 16px;
   }
 
   .input-label-foooter-email{
@@ -794,15 +788,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-    .texarea-txt::placeholder{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-
-    }
-
 
 .reviev-wrapper{
     margin-bottom: 24px;
@@ -819,14 +804,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .texarea-txt::placeholder {
-    position: absolute;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    margin-top: 8px;
-    margin-left: 16px;
 }
 
 .user-comment{
